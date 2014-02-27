@@ -12,10 +12,13 @@
 
 - (void)play
 {
-    
+    [self intro];
     BOOL continueToPlay = YES;
     while (continueToPlay) {
         @autoreleasepool {
+            
+            [self play_game];
+            
             [self puts:@"Try again? (yes or no)"];
             continueToPlay = [[self readFromConsole] isEqualToString:@"yes"];
         }
@@ -37,5 +40,30 @@
     printf("%s\n", [msg UTF8String]);
 }
 
+
+#pragma game
+
+- (void)intro
+{
+    NSArray *introLines = @[
+                            @"Acey Ducey Card Game",
+                            @"Adapted from a BASIC game from Creative Computing - Morristown, New Jersey.",
+                            @"",
+                            @"",
+                            @"",
+                            @"Acey Ducey is played in the following manner:",
+                            @"The dealer (computer) deals two cards face up",
+                            @"You have an option to bet or not to bet depending",
+                            @"on whether or not you feel the card will have",
+                            @"a value between the first two.",
+                            @"If you do not want to bet, input a 0."];
+    [introLines enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        [self puts:obj];
+    }];
+}
+
+- (void)play_game
+{
+}
 
 @end
