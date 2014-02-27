@@ -12,11 +12,13 @@
 
 - (void)play
 {
+    
     BOOL continueToPlay = YES;
     while (continueToPlay) {
-        
-        [self puts:@"Try again? (yes or no)"];
-        continueToPlay = [[self readFromConsole] isEqualToString:@"yes"];
+        @autoreleasepool {
+            [self puts:@"Try again? (yes or no)"];
+            continueToPlay = [[self readFromConsole] isEqualToString:@"yes"];
+        }
     }
     [self puts:@"OK, hope you had fun."];
 }
