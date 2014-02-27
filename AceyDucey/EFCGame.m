@@ -64,6 +64,41 @@
 
 - (void)play_game
 {
+    NSUInteger money = 100;
+    
+    while (money > 0) {
+        NSUInteger firstCard = arc4random_uniform(12) + 2;
+        NSUInteger secondCard = arc4random_uniform(14 - firstCard) + firstCard + 2;
+        
+        [self puts:[self cardToS:firstCard]];
+        [self puts:[self cardToS:secondCard]];
+        --money;
+    }
+}
+
+- (NSString *)cardToS:(NSUInteger)card
+{
+    if (card < 11) {
+        return [NSString stringWithFormat:@"%lu", (unsigned long)card];
+    }
+    
+    if (card == 11) {
+        return @"Jack";
+    }
+    
+    if (card == 12) {
+        return @"Queen";
+    }
+    
+    if (card == 13) {
+        return @"King";
+    }
+
+    if (card == 13) {
+        return @"Ace";
+    }
+    
+    return @"";
 }
 
 @end
