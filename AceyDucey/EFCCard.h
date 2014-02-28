@@ -13,4 +13,6 @@
 - (BOOL)isGreaterThan:(EFCCard *)other;
 - (BOOL)isLesserThan:(EFCCard *)other;
 
+- (BOOL)isInsideCard:(EFCCard *)firstCard andCard:(EFCCard *)secondCard;
+
 @end

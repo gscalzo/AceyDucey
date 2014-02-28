@@ -60,4 +60,15 @@
     return @"";
 }
 
+- (BOOL)isInsideCard:(EFCCard *)firstCard andCard:(EFCCard *)secondCard
+{
+    if([firstCard isGreaterThan:secondCard]){
+        EFCCard *tmp = secondCard;
+        secondCard = firstCard;
+        firstCard = tmp;
+    }
+
+    return [self isGreaterThan:firstCard] && [self isLesserThan:secondCard];
+}
+
 @end
