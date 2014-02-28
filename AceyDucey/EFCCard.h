@@ -4,11 +4,13 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "EFCCard.h"
 
 
-@interface EFCDeck : NSObject
+@interface EFCCard : NSObject
 
-- (EFCCard *)pickACard;
++ (EFCCard *)cardValue:(NSUInteger)value;
+
+- (BOOL)isGreaterThan:(EFCCard *)other;
+- (BOOL)isLesserThan:(EFCCard *)other;
 
 @end

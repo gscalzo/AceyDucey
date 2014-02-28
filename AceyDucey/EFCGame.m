@@ -70,45 +70,14 @@
     while (money > 0) {
         EFCDeck *deck = [EFCDeck new];
 
-        NSNumber *firstCard = [deck pickACard];
-        NSNumber *secondCard = [deck pickACard];
+        EFCCard *firstCard = [deck pickACard];
+        EFCCard *secondCard = [deck pickACard];
 
-        NSString *firstCardS = [self cardToS:firstCard];
-        //[self puts:firstCardS];
-        NSLog(@"craw - %@", firstCard);
-        NSLog(@"s - %@", firstCardS);
-        NSString *cartSecondS = [self cardToS:secondCard];
-        //[self puts:cartSecondS];
-        NSLog(@"craw - %@", secondCard);
-        NSLog(@"s - %@", cartSecondS);
+        NSLog(@"s - %@", firstCard);
+        NSLog(@"s - %@", secondCard);
         --money;
     }
 }
 
-- (NSString *)cardToS:(NSNumber *)cards
-{
-    NSUInteger card = [cards integerValue];
-    if (card < 11) {
-        return [NSString stringWithFormat:@"%lu", (unsigned long)card];
-    }
-    
-    if (card == 11) {
-        return @"Jack";
-    }
-    
-    if (card == 12) {
-        return @"Queen";
-    }
-    
-    if (card == 13) {
-        return @"King";
-    }
-
-    if (card == 14) {
-        return @"Ace";
-    }
-    
-    return @"";
-}
 
 @end

@@ -13,19 +13,19 @@
 - (id)init {
     if (self = [super init]){
         deck = [NSMutableSet set];
-        for (int i = 1; i < 15; i++) {
+        for (int i = 2; i < 15; i++) {
             [deck addObject:@(i)];
         }
     }
     return self;
 }
 
-- (NSNumber *)pickACard
+- (EFCCard *)pickACard
 {
     NSUInteger index = arc4random_uniform((u_int32_t)deck.count);
     NSNumber *pickedCard = [deck allObjects][index];
     [deck removeObject:pickedCard];
-    return pickedCard;
+    return [EFCCard cardValue:[pickedCard integerValue]];
 }
 
 @end

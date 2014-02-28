@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4EE97794436070630A5E9ECC /* EFCDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE97B5613C5CE6BA28664A7 /* EFCDeck.m */; };
+		4EE977FE27529E9919E1A479 /* EFCCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE979735F6246FF85678B92 /* EFCCard.m */; };
 		EE89013D18BFA13400098623 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE89013C18BFA13400098623 /* Foundation.framework */; };
 		EE89014018BFA13400098623 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE89013F18BFA13400098623 /* main.m */; };
 		EE89014418BFA13400098623 /* AceyDucey.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = EE89014318BFA13400098623 /* AceyDucey.1 */; };
@@ -28,6 +29,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4EE977505D679A307DF337AE /* EFCCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFCCard.h; sourceTree = "<group>"; };
+		4EE979735F6246FF85678B92 /* EFCCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFCCard.m; sourceTree = "<group>"; };
 		4EE97B5613C5CE6BA28664A7 /* EFCDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFCDeck.m; sourceTree = "<group>"; };
 		4EE97DE95840B26167923068 /* EFCDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFCDeck.h; sourceTree = "<group>"; };
 		EE89013918BFA13400098623 /* AceyDucey */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AceyDucey; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +89,8 @@
 				EE89014118BFA13400098623 /* Supporting Files */,
 				4EE97B5613C5CE6BA28664A7 /* EFCDeck.m */,
 				4EE97DE95840B26167923068 /* EFCDeck.h */,
+				4EE979735F6246FF85678B92 /* EFCCard.m */,
+				4EE977505D679A307DF337AE /* EFCCard.h */,
 			);
 			path = AceyDucey;
 			sourceTree = "<group>";
@@ -152,6 +157,7 @@
 				EE89014C18BFA14900098623 /* EFCGame.m in Sources */,
 				EE89014018BFA13400098623 /* main.m in Sources */,
 				4EE97794436070630A5E9ECC /* EFCDeck.m in Sources */,
+				4EE977FE27529E9919E1A479 /* EFCCard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
