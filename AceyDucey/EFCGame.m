@@ -7,6 +7,7 @@
 //
 
 #import "EFCGame.h"
+#import "EFCDeck.h"
 
 @implementation EFCGame
 
@@ -67,17 +68,26 @@
     NSUInteger money = 100;
     
     while (money > 0) {
-        NSUInteger firstCard = arc4random_uniform(12) + 2;
-        NSUInteger secondCard = arc4random_uniform(14 - firstCard) + firstCard + 2;
-        
-        [self puts:[self cardToS:firstCard]];
-        [self puts:[self cardToS:secondCard]];
+        EFCDeck *deck = [EFCDeck new];
+
+        NSNumber *firstCard = [deck pickACard];
+        NSNumber *secondCard = [deck pickACard];
+
+        NSString *firstCardS = [self cardToS:firstCard];
+        //[self puts:firstCardS];
+        NSLog(@"craw - %@", firstCard);
+        NSLog(@"s - %@", firstCardS);
+        NSString *cartSecondS = [self cardToS:secondCard];
+        //[self puts:cartSecondS];
+        NSLog(@"craw - %@", secondCard);
+        NSLog(@"s - %@", cartSecondS);
         --money;
     }
 }
 
-- (NSString *)cardToS:(NSUInteger)card
+- (NSString *)cardToS:(NSNumber *)cards
 {
+    NSUInteger card = [cards integerValue];
     if (card < 11) {
         return [NSString stringWithFormat:@"%lu", (unsigned long)card];
     }
@@ -94,7 +104,7 @@
         return @"King";
     }
 
-    if (card == 13) {
+    if (card == 14) {
         return @"Ace";
     }
     
