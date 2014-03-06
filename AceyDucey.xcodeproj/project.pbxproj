@@ -11,7 +11,6 @@
 		4EE977FE27529E9919E1A479 /* EFCCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE979735F6246FF85678B92 /* EFCCard.m */; };
 		EE89013D18BFA13400098623 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE89013C18BFA13400098623 /* Foundation.framework */; };
 		EE89014018BFA13400098623 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE89013F18BFA13400098623 /* main.m */; };
-		EE89014418BFA13400098623 /* AceyDucey.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = EE89014318BFA13400098623 /* AceyDucey.1 */; };
 		EE89014C18BFA14900098623 /* EFCGame.m in Sources */ = {isa = PBXBuildFile; fileRef = EE89014B18BFA14900098623 /* EFCGame.m */; };
 /* End PBXBuildFile section */
 
@@ -22,7 +21,6 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				EE89014418BFA13400098623 /* AceyDucey.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
@@ -37,7 +35,6 @@
 		EE89013C18BFA13400098623 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EE89013F18BFA13400098623 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EE89014218BFA13400098623 /* AceyDucey-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AceyDucey-Prefix.pch"; sourceTree = "<group>"; };
-		EE89014318BFA13400098623 /* AceyDucey.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = AceyDucey.1; sourceTree = "<group>"; };
 		EE89014A18BFA14900098623 /* EFCGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFCGame.h; sourceTree = "<group>"; };
 		EE89014B18BFA14900098623 /* EFCGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFCGame.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,7 +82,6 @@
 				EE89014A18BFA14900098623 /* EFCGame.h */,
 				EE89014B18BFA14900098623 /* EFCGame.m */,
 				EE89013F18BFA13400098623 /* main.m */,
-				EE89014318BFA13400098623 /* AceyDucey.1 */,
 				EE89014118BFA13400098623 /* Supporting Files */,
 				4EE97B5613C5CE6BA28664A7 /* EFCDeck.m */,
 				4EE97DE95840B26167923068 /* EFCDeck.h */,
@@ -269,6 +265,7 @@
 				EE89014918BFA13400098623 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
